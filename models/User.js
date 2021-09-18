@@ -4,7 +4,10 @@ const {Schema} = mongoose;
 
 const userShcema = new Schema({
     username:String,
-    email: String,
+    email: {
+        type: String,
+        unique: true
+      },
     icon:String,
     password: String
 });
