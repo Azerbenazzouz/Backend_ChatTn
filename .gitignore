@@ -23,3 +23,6 @@ yarn-error.log*
 
 # release
 /coreui-pro-react-admin-template*.zip
+
+# dotenv environment variables file
+.Env
