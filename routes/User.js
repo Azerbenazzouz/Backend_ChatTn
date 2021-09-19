@@ -1,12 +1,13 @@
 const express= require('express');
 const router = express.Router();
 const UserController = require("../controles/Users/UserController");
+const TokenController = require("../controles/Token/TokenController");
 
 
 router.post('/Regester', UserController.Regester);
-router.get('/getall', UserController.AuthToken , UserController.GetAll);
+router.get('/getall', TokenController.AuthToken , UserController.GetAll);
 router.post('/login', UserController.Login);
-router.post('/Token', UserController.Token);
+router.post('/Token', TokenController.Token);
 
 
 
