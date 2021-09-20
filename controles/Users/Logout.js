@@ -1,8 +1,8 @@
 const { RefreshTokens  } = require('../../models/RefreshTokens');
 
-const Logout=async (req,res,next)=>{
-    RefreshTokens.findOneAndRemove({"refreshTokens":req.body.token }).then(()=>{
-        res.send('SUCCESS')
-    }).catch(err=>{return res.status(299).send(err)})
+const Logout=async (req,res)=>{
+    RefreshTokens.findOneAndRemove({"refreshTokens":req.body.refreshTokens }).then((result)=>{
+        res.send(result)
+    }).catch(err=>{return res.status().send(err)})
 }
 module.exports = Logout;

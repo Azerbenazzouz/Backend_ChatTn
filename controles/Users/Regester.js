@@ -7,15 +7,16 @@ const Regester=async (req,res)=>{
     if(error){
         res.status(299).send(error)
     }else{
-        User.find({"email":req.body.email}).then(async(R) => {
-            if(R==null){
+        User.find({"email":req.body.email}).then(async(Result) => {
+
+                if(Result.length==0){
                 const resulta = await new User(value).save()
                 res.status(200).send(resulta)
             }else{
                 res.status(299).send({
                     "_original": {
                         "username": req.body.username,
-                        "email": "",
+                        "email": req.body.email,
                         "password": req.body.password
                     },
                     "details": [
