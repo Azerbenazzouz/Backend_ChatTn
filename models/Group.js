@@ -9,6 +9,7 @@ const userShcema = new Schema({
     lastSender: String,
     lastMessage: String,
     lastTime: Date,
+    adminsEmail: Array
 });
 
 
@@ -20,6 +21,7 @@ const createGroup =(group)=>{
         lastSender: Joi.string().required(),
         lastMessage: Joi.string().required(),
         lastTime: Joi.date().required(),
+        adminsEmail: Joi.array().required(),
 })
     return schema.validate(group);
 }
