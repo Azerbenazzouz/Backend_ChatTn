@@ -29,6 +29,10 @@ const User = require('./routes/User')
 app.use('/user', User);
 
 
+const Messenger = require('./routes/Messenger')
+app.use('/messenger', Messenger);
+
+
 // Start the server
 const PORT = process.env.PORT || 3011;
 app.listen(PORT, () => {
