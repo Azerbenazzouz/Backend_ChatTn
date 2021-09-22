@@ -4,4 +4,5 @@ const ChangeGroupName = require('./Group/ChangeGroupName')
 const ChangeLastInfo = require('./Group/ChangeLastInfo')
 const ChangeGroupeImg = require('./Group/ChangeGroupeImg')
 const DeleteGroup = require('./Group/DeleteGroup')
-module.exports={ MakeGroup ,ChangeGroupName ,ChangeLastInfo ,ChangeGroupeImg ,DeleteGroup }
+const AddNewUser = require('./Group/AddNewUser')
+module.exports={ MakeGroup ,ChangeGroupName ,ChangeLastInfo ,ChangeGroupeImg ,DeleteGroup ,AddNewUser}
