@@ -9,5 +9,7 @@ router.post('/group/ChangeLastInfo', TokenController.AuthToken,MessengerControll
 router.post('/group/ChangeGroupeImg', TokenController.AuthToken,MessengerController.ChangeGroupeImg)
 router.delete('/group/DeleteGroup', TokenController.AuthToken,MessengerController.DeleteGroup)
 router.post('/group/AddNewUser',TokenController.AuthToken,MessengerController.AddNewUser)
+router.post('/group/SendMessageInGroup',TokenController.AuthToken,MessengerController.SendMessageInGroup)
+
 
 module.exports = router;

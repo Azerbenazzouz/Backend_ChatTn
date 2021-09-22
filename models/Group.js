@@ -10,6 +10,7 @@ const userShcema = new Schema({
     lastMessage: String,
     lastTime: Date,
     adminsEmail: Array,
+    conversation: Array,
     // TODO:any one of the mumbers can invite users => Boolean if true =>any one can invite users if false => just admins can invite users
 });
 
@@ -23,6 +24,7 @@ const createGroup =(group)=>{
         lastMessage: Joi.string().required(),
         lastTime: Joi.date().required(),
         adminsEmail: Joi.array().required(),
+        conversation:Joi.array().required(),
 })
     return schema.validate(group);
 }
