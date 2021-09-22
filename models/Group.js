@@ -9,7 +9,8 @@ const userShcema = new Schema({
     lastSender: String,
     lastMessage: String,
     lastTime: Date,
-    adminsEmail: Array
+    adminsEmail: Array,
+    // TODO:any one of the mumbers can invite users => Boolean if true =>any one can invite users if false => just admins can invite users
 });
 
 
