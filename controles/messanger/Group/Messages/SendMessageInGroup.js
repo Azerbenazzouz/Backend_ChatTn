@@ -1,5 +1,5 @@
-const { Group } =require('../../../models/Group')
-const { createMessageGroup } =require('../../../models/MessageGroup')
+const { Group } =require('../../../../models/Group')
+const { createMessageGroup } =require('../../../../models/MessageGroup')
 const { v4: uuidv4 } = require('uuid');
 
 const SendMessageInGroup=async (req,res)=>{
