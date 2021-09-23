@@ -7,6 +7,16 @@ const DeleteGroup = require('./Group/DeleteGroup')
 const AddNewUser = require('./Group/AddNewUser')
 const SendMessageInGroup = require('./Group/Messages/SendMessageInGroup')
 const GetMessagesGroup = require('./Group/Messages/GetMessagesGroup')
+const DeleteMessageInGroup = require('./Group/Messages/DeleteMessageInGroup')
 
 
-module.exports={ MakeGroup ,ChangeGroupName ,ChangeLastInfo ,ChangeGroupeImg ,DeleteGroup ,AddNewUser,SendMessageInGroup,GetMessagesGroup}
+module.exports={    MakeGroup ,
+                    ChangeGroupName ,
+                    ChangeLastInfo ,
+                    ChangeGroupeImg ,
+                    DeleteGroup ,
+                    AddNewUser,
+                    SendMessageInGroup,
+                    GetMessagesGroup,
+                    DeleteMessageInGroup
+                }

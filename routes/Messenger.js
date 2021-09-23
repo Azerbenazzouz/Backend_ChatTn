@@ -11,6 +11,7 @@ router.delete('/group/DeleteGroup', TokenController.AuthToken,MessengerControlle
 router.post('/group/AddNewUser',TokenController.AuthToken,MessengerController.AddNewUser)
 router.post('/group/SendMessageInGroup',TokenController.AuthToken,MessengerController.SendMessageInGroup)
 router.get('/group/GetMessagesGroup',TokenController.AuthToken,MessengerController.GetMessagesGroup)
+router.post('/group/DeleteMessageInGroup',TokenController.AuthToken,MessengerController.DeleteMessageInGroup)
 
 
 module.exports = router;
