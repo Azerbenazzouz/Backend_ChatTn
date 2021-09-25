@@ -7,6 +7,7 @@
     <img width="600px" src="https://raw.githubusercontent.com/vineeshvk/chat-app-flutter/master/assets/screenshots/mock1.jpg" style="max-width:100%;">
 </h1>
 ## :rocket: Technologies
+
 This project was developed with the technologies:
 
 -  [NodeJs](http://nodejs.dev/)
