@@ -39,12 +39,7 @@ $ npm start
 ```
 
 ---
+[API documentation](https://documenter.getpostman.com/view/13982336/UUxtEqCa)
 
 Made with ♥ by Azer Ben Azzouz :wave: [Get in touch!](https://www.linkedin.com/in/azer-ben-azzouz/)
 
-# Backend_ChatTn
-Backend ChatTn
-
-https://documenter.getpostman.com/view/13982336/UUxtEqCa
-
-https://chattn.herokuapp.com/
