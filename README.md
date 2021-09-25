@@ -4,7 +4,7 @@
   <a href="#information_source-how-to-use">How To Use</a>
 </p>
 <h1 align="center">
-    <img width="400px" src="https://raw.githubusercontent.com/vineeshvk/chat-app-flutter/master/assets/screenshots/mock1.jpg" style="max-width:100%;">
+    <img width="600px" src="https://raw.githubusercontent.com/vineeshvk/chat-app-flutter/master/assets/screenshots/mock1.jpg" style="max-width:100%;">
 </h1>
 # Backend_ChatTn
 Backend ChatTn
