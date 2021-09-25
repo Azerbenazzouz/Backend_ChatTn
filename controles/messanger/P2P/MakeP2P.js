@@ -2,7 +2,6 @@ const { P2P , createP2p } =require('../../../models/P2P')
 
 const MakeP2P=async (req,res)=>{
     P2P.find({users_Emails:req.body.users_Emails}).then((val)=>{
-        console.log(val)
         if(val.length==0) {
             P2P.find({users_Emails:[req.body.users_Emails[1],req.body.users_Emails[0]]}).then(async val=>{
                 if(val.length==0) {
