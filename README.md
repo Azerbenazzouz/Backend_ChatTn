@@ -16,6 +16,25 @@ This project was developed with the technologies:
 -  [jwt](https://jwt.io/)
 -  [Visual Studio Code](https://code.visualstudio.com/)
 ## :information_source: How To Use
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node](https://nodejs.org/en/) or [npmJs](https://www.npmjs.com/). From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/52118041azer/Backend_ChatTn
+
+# Go into the repository
+$ cd backend_ChatTn
+
+# Install dependencies
+$ npm install
+
+# Run the server
+$ npm start
+```
+
+---
+
+Made with ♥ by Azer Ben Azzouz :wave: [Get in touch!](https://www.linkedin.com/in/azer-ben-azzouz/)
 
 # Backend_ChatTn
 Backend ChatTn
