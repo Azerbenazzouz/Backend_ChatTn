@@ -4,9 +4,7 @@
   <a href="#information_source-how-to-use">How To Use</a>
 </p>
 <h1 align="center">
-    <img width="250px" src="https://github.com/luizpaulogroup/TikTok/blob/master/src/Images/GIF.gif" style="max-width:100%;">
-    <img width="250px" src="https://github.com/luizpaulogroup/TikTok/blob/master/src/Images/1.png" style="max-width:100%;">
-    <img width="250px" src="https://github.com/luizpaulogroup/TikTok/blob/master/src/Images/2.png" style="max-width:100%;">
+    <img width="250px" src="https://raw.githubusercontent.com/vineeshvk/chat-app-flutter/master/assets/screenshots/mock1.jpg" style="max-width:100%;">
 </h1>
 # Backend_ChatTn
 Backend ChatTn
