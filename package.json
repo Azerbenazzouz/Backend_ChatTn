@@ -12,6 +12,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.6",
     "nodemon": "^2.0.12",
+    "socket.io": "^4.2.0",
     "uid": "^2.0.0",
     "uuid": "^8.3.2"
   },
