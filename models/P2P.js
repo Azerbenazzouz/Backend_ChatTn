@@ -4,7 +4,7 @@ const {Schema} = mongoose;
 
 const userShcema = new Schema({
     name:String,
-    usersEmail: Array,
+    users_id: Array,
     lastSender: String,
     lastMessage: String,
     lastTime: Date,
@@ -16,9 +16,9 @@ const userShcema = new Schema({
 const createP2p =(group)=>{
     const schema = Joi.object({
         name: Joi.string(),
-        usersEmail: Joi.array().required(),
-        lastSender: Joi.string().required(),
-        lastMessage: Joi.string().required(),
+        users_id: Joi.array().required(),
+        lastSender: Joi.string(),
+        lastMessage: Joi.string(),
         lastTime: Joi.date().required(),
         conversation:Joi.array().required(),
 })
