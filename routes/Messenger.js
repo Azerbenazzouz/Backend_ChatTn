@@ -15,7 +15,7 @@ router.get('/group/GetMessagesGroup',TokenController.AuthToken,MessengerControll
 router.post('/group/DeleteMessageInGroup',TokenController.AuthToken,MessengerController.DeleteMessageInGroup)
 // *P2P routers
 // TODO:Routers of P2P Messanger
-
+router.post('/p2p/MakeP2P', TokenController.AuthToken,MessengerController.MakeP2P)
 
 // * Exports mudule router
 module.exports = router;

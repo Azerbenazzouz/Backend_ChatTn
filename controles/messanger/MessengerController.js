@@ -11,10 +11,13 @@ const GetMessagesGroup = require('./Group/Messages/GetMessagesGroup')
 const DeleteMessageInGroup = require('./Group/Messages/DeleteMessageInGroup')
 // * P2P functions
 // TODO: Make P2P functions And export them
-
+const MakeP2P = require('./P2P/MakeP2P')
 
 // * Exports mudule
-module.exports={    MakeGroup ,
+module.exports={   
+// TODO: Export Group modules
+
+                    MakeGroup ,
                     ChangeGroupName ,
                     ChangeLastInfo ,
                     ChangeGroupeImg ,
@@ -22,5 +25,7 @@ module.exports={    MakeGroup ,
                     AddNewUser,
                     SendMessageInGroup,
                     GetMessagesGroup,
-                    DeleteMessageInGroup
+                    DeleteMessageInGroup,
+// TODO: Export P2P modules
+                    MakeP2P
                 }
