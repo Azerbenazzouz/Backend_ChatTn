@@ -13,10 +13,11 @@ router.post('/group/AddNewUser',TokenController.AuthToken,MessengerController.Ad
 router.post('/group/SendMessageInGroup',TokenController.AuthToken,MessengerController.SendMessageInGroup)
 router.get('/group/GetMessagesGroup',TokenController.AuthToken,MessengerController.GetMessagesGroup)
 router.post('/group/DeleteMessageInGroup',TokenController.AuthToken,MessengerController.DeleteMessageInGroup)
+
 // *P2P routers
-// TODO:Routers of P2P Messanger
 router.post('/p2p/MakeP2P', TokenController.AuthToken,MessengerController.MakeP2P)
 router.post('/p2p/Changep2pName', TokenController.AuthToken,MessengerController.Changep2pName)
+router.post('/p2p/SendMessageInP2P',TokenController.AuthToken,MessengerController.SendMessageInP2P)
 
 // * Exports mudule router
 module.exports = router;

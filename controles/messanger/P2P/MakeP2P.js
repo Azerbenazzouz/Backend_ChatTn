@@ -12,8 +12,6 @@ const MakeP2P=async (req,res)=>{
                 }else{return res.status(299).send("299")}
             })
         }else{return res.status(299).send("299")}
-        
-        
     })
     
 }
