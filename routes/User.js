@@ -2,11 +2,12 @@ const express= require('express');
 const router = express.Router();
 const UserController = require("../controles/Users/UserController");
 const TokenController = require("../controles/Token/TokenController");
+require('dotenv').config();
 
 const securityMiddleware =(req,res,next)=>{
     const api_Key=req.headers["x-api-key"]
     const token = api_Key
-    if(token!="PK/X5#QsE?8lhhYsw!D2;") return res.sendStatus(299)
+    if(token!=process.env.APIKEY) return res.sendStatus(299)
     next()
   }
 
