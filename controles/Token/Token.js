@@ -4,8 +4,8 @@ require('dotenv').config();
 
 
 const Token=async (req,res)=>{
+    console.log(req.body)
     const refreshToken = req.body.token
-    // console.log(refreshToken)
 
     // check if the refresh token is valid
     if(refreshToken == null) return sendStatus(299)
