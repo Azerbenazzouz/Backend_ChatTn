@@ -32,7 +32,7 @@ const Token=async (req,res)=>{
         })
     })
 }
-//* Generate New Access Token
+//* Generate New Access Token   
 const generateAccessToken=(email)=> {return jwt.sign(email , process.env.ACCESS_TOKEN_SECRET ,{ expiresIn: "2592000s"})}
 
 module.exports = Token;
