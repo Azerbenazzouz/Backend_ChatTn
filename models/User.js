@@ -16,7 +16,6 @@ const userShcema = new Schema({
 const createUser =(user)=>{
     const schema = Joi.object({
     username: Joi.string()
-        .alphanum()
         .min(3)
         .max(30)
         .required(),
