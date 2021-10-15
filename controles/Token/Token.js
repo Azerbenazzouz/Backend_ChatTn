@@ -28,7 +28,7 @@ const Token=async (req,res)=>{
             //* Generate New Access Token
             const accessToken= generateAccessToken({email : email.email.email})
             //* Send the accessToken
-            res.json({accessToken : accessToken})
+            res.json({accessToken : accessToken,email: email.email.email})
         })
     })
 }
