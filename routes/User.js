@@ -12,11 +12,13 @@ const securityMiddleware =(req,res,next)=>{
   }
 
 router.post('/Regester', securityMiddleware ,UserController.Regester);
-router.get('/getall', securityMiddleware ,TokenController.AuthToken , UserController.GetAll);
-router.get('/getuser', securityMiddleware ,TokenController.AuthToken , UserController.GetUser);
 router.post('/login', securityMiddleware ,UserController.Login);
 router.post('/token',TokenController.Token);
 router.delete('/logout', securityMiddleware ,TokenController.AuthToken ,UserController.Logout);
+
+router.get('/getall', securityMiddleware ,TokenController.AuthToken , UserController.GetAll);
+router.get('/getuser', securityMiddleware ,TokenController.AuthToken , UserController.GetUser);
+router.get('/getname', securityMiddleware ,TokenController.AuthToken , UserController.GetNames);
 
 
 module.exports = router;
