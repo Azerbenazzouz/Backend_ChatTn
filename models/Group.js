@@ -19,7 +19,7 @@ const createGroup =(group)=>{
     const schema = Joi.object({
         name: Joi.string().required(),
         usersEmail: Joi.array().required(),
-        img: Joi.string().required(),
+        img: Joi.string(),
         lastSender: Joi.string().required(),
         lastMessage: Joi.string().required(),
         lastTime: Joi.date().required(),
