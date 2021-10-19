@@ -9,6 +9,7 @@ const AddNewUser = require('./Group/AddNewUser')
 const SendMessageInGroup = require('./Group/Messages/SendMessageInGroup')
 const GetMessagesGroup = require('./Group/Messages/GetMessagesGroup')
 const DeleteMessageInGroup = require('./Group/Messages/DeleteMessageInGroup')
+const GetAllGroups =require('./Group/GetAllGroups')
 // * P2P functions
 // TODO: Make P2P functions And export them
 const MakeP2P = require('./P2P/MakeP2P')
@@ -30,6 +31,7 @@ module.exports={
                     SendMessageInGroup,
                     GetMessagesGroup,
                     DeleteMessageInGroup,
+                    GetAllGroups,
 // TODO: Export P2P modules
                     MakeP2P,
                     Changep2pName,

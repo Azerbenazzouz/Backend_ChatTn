@@ -22,6 +22,8 @@ router.post('/group/AddNewUser', securityMiddleware ,TokenController.AuthToken,M
 router.post('/group/SendMessageInGroup', securityMiddleware ,TokenController.AuthToken,MessengerController.SendMessageInGroup)
 router.get('/group/GetMessagesGroup', securityMiddleware ,TokenController.AuthToken,MessengerController.GetMessagesGroup)
 router.delete('/group/DeleteMessageInGroup', securityMiddleware ,TokenController.AuthToken,MessengerController.DeleteMessageInGroup)
+router.get('/group/GetAllGroups', securityMiddleware ,TokenController.AuthToken,MessengerController.GetAllGroups)
+
 
 // *P2P routers
 router.post('/p2p/MakeP2P', securityMiddleware ,TokenController.AuthToken,MessengerController.MakeP2P)
