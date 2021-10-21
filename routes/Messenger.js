@@ -30,6 +30,7 @@ router.post('/p2p/MakeP2P', securityMiddleware ,TokenController.AuthToken,Messen
 router.post('/p2p/Changep2pName', securityMiddleware ,TokenController.AuthToken,MessengerController.Changep2pName)
 router.post('/p2p/SendMessageInP2P', securityMiddleware ,TokenController.AuthToken,MessengerController.SendMessageInP2P)
 router.get('/p2p/GetMessagesP2P', securityMiddleware ,TokenController.AuthToken,MessengerController.GetMessagesP2P)
+router.get('/p2p/GetAllP2P', securityMiddleware ,TokenController.AuthToken,MessengerController.GetAllP2P)
 router.delete('/P2P/DeleteMessageInP2P', securityMiddleware ,TokenController.AuthToken,MessengerController.DeleteMessageInP2P)
 
 // * Exports mudule router
